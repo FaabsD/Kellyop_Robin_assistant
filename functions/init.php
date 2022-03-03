@@ -1,5 +1,6 @@
 <?php
 define('THEME_URL', get_template_directory_uri() . '');
+define('THEME_TEXT_DOMAIN', wp_get_theme()->get('Text Domain'));
 
 add_action('after_setup_theme', 'theme_setup');
 
