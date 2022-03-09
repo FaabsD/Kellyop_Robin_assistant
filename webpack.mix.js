@@ -1,6 +1,6 @@
 const mix = require('laravel-mix');
 
-mix.browserSync( {
+mix.browserSync({
     proxy: {
         target: 'robinassists.test',
         ws: true,
@@ -13,9 +13,12 @@ mix.browserSync( {
     watch: true,
     browser: 'firefox developer edition',
     open: 'local',
-} );
+});
 
 mix.sass('resources/assets/sass/app.scss', 'resources/assets/css/app.css')
+    .options({
+        processCssUrls: false,
+    })
     .postCss('resources/assets/css/app.css', 'build/css/app.css', [
         require('autoprefixer'),
     ]);
