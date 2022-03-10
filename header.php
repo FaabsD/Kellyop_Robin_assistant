@@ -10,11 +10,15 @@
 <body <?php body_class(); ?>>
 <header>
     <?php if ( function_exists('the_custom_logo') ) : ?>
-        <?php the_custom_logo(); ?>
+        <?php if ( get_theme_mod('custom_logo') ) : ?>
+            <?php the_custom_logo(); ?>
+        <?php else : ?>
+            <div class="header__text">
+                <?php echo get_bloginfo('name') ?>
+            </div>
+        <?php endif; ?>
     <?php endif; ?>
-    <div class="header__text">
-        <?php the_title() ?>
-    </div>
+
     <?php if ( function_exists('dynamic_sidebar') ) {
         dynamic_sidebar('header_menu_section');
     } ?>

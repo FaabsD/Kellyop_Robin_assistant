@@ -1,0 +1,58 @@
+@use "../vars/colors";
+@use "../vars/fontSizes";
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	background-color: colors.$white-ish;
+
+	.custom-logo-link {
+		.custom-logo {
+			max-height: 6rem;
+			width: auto;
+		}
+	}
+
+	.header__text {
+		height: max-content;
+	}
+
+	.header__menu-section {
+		display: flex;
+		flex: 0 0 max-content;
+
+		.menu-main-menu-container {
+			font-size: fontSizes.$pt25;
+
+			.menu {
+				display: flex;
+				justify-content: space-between;
+				column-gap: 2rem;
+				list-style: none;
+				padding-left: 0;
+
+				&-item {
+					margin: 0;
+					padding: 0;
+
+					a {
+						margin: 0;
+						padding: 0;
+						text-decoration: none;
+					}
+
+					&-type-custom {
+						&:not(.menu-item-home) {
+							a {
+								background-color: colors.$lightGrey;
+								padding: 1rem 2.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
