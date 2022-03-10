@@ -68,8 +68,8 @@ header .header__menu-section .menu-main-menu-container {
 header .header__menu-section .menu-main-menu-container .menu {
   display: flex;
   justify-content: space-between;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
   list-style: none;
   padding-left: 0;
 }
