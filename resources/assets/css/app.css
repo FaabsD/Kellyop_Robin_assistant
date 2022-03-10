@@ -40,6 +40,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 header {
@@ -85,4 +86,10 @@ header .header__menu-section .menu-main-menu-container .menu-item a {
 header .header__menu-section .menu-main-menu-container .menu-item-type-custom:not(.menu-item-home) a {
   background-color: #E6EBF9;
   padding: 1rem 2.5rem;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
+  grid-template-columns: repeat(3, minmax(min-content, 1fr));
 }
