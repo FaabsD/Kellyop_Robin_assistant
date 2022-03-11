@@ -25,10 +25,14 @@
 			flex-shrink: 0;
 
 			.cta__link {
+				min-height: min-content;
+				max-height: 3rem;
+				font-size: fontSizes.$px16;
+				font-weight: bold;
 				display: block;
 				box-sizing: border-box;
-				background-color: colors.$blue;
-				padding: .5rem 1rem;
+				background-color: black;
+				padding: 1rem 2rem;
 				color: colors.$background;
 				text-decoration: none;
 			}
