@@ -1,4 +1,5 @@
 @use "../vars/colors";
+@use "../vars/fonts";
 @use "../vars/fontSizes";
 
 header {
@@ -6,11 +7,11 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 2rem;
-	background-color: colors.$white-ish;
+	background-color: colors.$background;
 
 	.custom-logo-link {
 		.custom-logo {
-			max-height: 6rem;
+			max-height: 4rem;
 			width: auto;
 		}
 	}
@@ -24,16 +25,19 @@ header {
 		flex: 0 0 max-content;
 
 		.menu-main-menu-container {
-			font-size: fontSizes.$pt25;
+			font-size: fontSizes.$px16;
 
 			.menu {
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 				column-gap: 5rem;
 				list-style: none;
-				padding-left: 0;
+				padding: 0 0;
 
 				&-item {
+					font-family: fonts.$gilroy !important;
+					font-weight: 800;
 					margin: 0;
 					padding: 0;
 
@@ -41,13 +45,18 @@ header {
 						margin: 0;
 						padding: 0;
 						text-decoration: none;
+						font-family: inherit;
 					}
 
 					&-type-custom {
 						&:not(.menu-item-home) {
 							a {
+								display: inline-block;
 								background-color: colors.$lightGrey;
-								padding: 1rem 2.5rem;
+								padding: 1.3rem 2.5rem;
+								height: 64px;
+								max-height: 64px;
+								box-sizing: border-box;
 							}
 						}
 					}
