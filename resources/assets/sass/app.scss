@@ -1,4 +1,5 @@
 @use "includes/defaults";
+// include Partials
 @use "includes/partials/header";
-
+@use "includes/partials/cta";
 @use 'includes/partials/footer';
