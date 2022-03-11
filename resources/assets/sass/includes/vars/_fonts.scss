@@ -38,4 +38,21 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../../resources/fonts/Gilroy/Gilroy-FREE/Gilroy-ExtraBold.otf") format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../../resources/fonts/Gilroy/Gilroy-FREE/Gilroy-light.otf") format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 $nexa: Nexa, sans-serif;
+$gilroy: Gilroy, sans-serif;
