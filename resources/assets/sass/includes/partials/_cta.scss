@@ -1,0 +1,62 @@
+@use "../vars/colors";
+@use "../vars/fonts";
+@use "../vars/fontSizes";
+
+.cta {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	column-gap: 2rem;
+	align-items: center;
+	padding: 1rem 5rem;
+
+	&__content {
+		flex-basis: fit-content;
+		flex-grow: 0;
+		flex-shrink: 1;
+		height: max-content;
+		min-height: min-content;
+		max-height: max-content;
+
+
+		.cta__link-container {
+			width: max-content;
+			flex-grow: 0;
+			flex-shrink: 0;
+
+			.cta__link {
+				display: block;
+				box-sizing: border-box;
+				background-color: colors.$blue;
+				padding: .5rem 1rem;
+				color: colors.$background;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&__image {
+		flex-basis: fit-content;
+		flex-grow: 0;
+		flex-shrink: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		overflow: hidden;
+		border-radius: 11rem;
+
+		.attachment-full {
+			max-width: 100%;
+			width: auto;
+			height: auto;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	&__instruction-video {
+		flex-basis: fit-content;
+		flex-grow: 0;
+		flex-shrink: 1;
+	}
+}
