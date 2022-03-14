@@ -105,11 +105,17 @@ header .header__menu-section .menu-main-menu-container .menu-item a {
 }
 header .header__menu-section .menu-main-menu-container .menu-item-type-custom:not(.menu-item-home) a {
   display: inline-block;
-  background-color: #E6EBF9;
-  padding: 1.3rem 2.5rem;
-  height: 64px;
-  max-height: 64px;
+  background-color: #FEA233;
+  padding: 1rem 2rem;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
+  min-height: min-content;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
   box-sizing: border-box;
+  color: #0B37F2;
+  border-radius: 0.3rem;
 }
 
 .cta {

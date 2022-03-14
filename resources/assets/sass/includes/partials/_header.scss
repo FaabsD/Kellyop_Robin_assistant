@@ -53,11 +53,13 @@ header {
 						&:not(.menu-item-home) {
 							a {
 								display: inline-block;
-								background-color: colors.$lightGrey;
-								padding: 1.3rem 2.5rem;
-								height: 64px;
-								max-height: 64px;
+								background-color: colors.$orange;
+								padding: 1rem 2rem;
+								min-height: min-content;
+								max-height: max-content;
 								box-sizing: border-box;
+								color: colors.$blue;
+								border-radius: .3rem;
 							}
 						}
 					}
