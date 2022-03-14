@@ -9,6 +9,7 @@
 	column-gap: 2rem;
 	align-items: center;
 	padding: 1rem 5rem;
+	position: relative;
 
 	&__content {
 		flex-basis: fit-content;
@@ -17,6 +18,11 @@
 		height: max-content;
 		min-height: min-content;
 		max-height: max-content;
+		color: colors.$main;
+
+		h2 {
+			font-size: fontSizes.$px50;
+		}
 
 
 		.cta__link-container {
@@ -31,9 +37,9 @@
 				font-weight: bold;
 				display: block;
 				box-sizing: border-box;
-				background-color: black;
+				background-color: colors.$blue;
 				padding: 1rem 2rem;
-				color: colors.$background;
+				color: colors.$orange;
 				text-decoration: none;
 			}
 		}
@@ -47,7 +53,6 @@
 		align-items: center;
 		justify-content: center;
 		overflow: hidden;
-		border-radius: 11rem;
 
 		.attachment-full {
 			max-width: 100%;
@@ -55,6 +60,10 @@
 			height: auto;
 			object-fit: cover;
 			object-position: center;
+		}
+
+		&__rounded {
+			border-radius: 11rem;
 		}
 	}
 
