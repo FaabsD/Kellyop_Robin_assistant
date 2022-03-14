@@ -15,6 +15,27 @@ function register_widgets()
         'after_title'   => '</h2>',
     ));
 
+    // register a call to action section for the footer
+    register_sidebar(array(
+        'name'          => 'Call to action (footer)',
+        'id'            => 'cta-footer',
+        'before_widget' => '<div class="footer-cta">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ));
+
+    // register a copyright section in the footer
+    register_sidebar(array(
+        'name'          => 'Copyright (footer)',
+        'id'            => 'copyright-footer',
+        'before_widget' => '<div class="footer-copyright">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2>',
+        'after_title'   => '</h2>',
+    ));
+
+
 //    Register multiple footer widgets
     $footer_widgets = array(
         array(
@@ -41,8 +62,16 @@ function register_widgets()
             'before_title'  => '<h2>',
             'after_title'   => '</h2>',
         ),
+        array(
+            'name'          => 'Footer content 4',
+            'id'            => 'footer-content-4',
+            'before_widget' => '<div class="footer-content footer-content-4">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>',
+        )
     );
-    foreach ($footer_widgets as $args) {
+    foreach ( $footer_widgets as $args ) {
         register_sidebar($args);
     }
 }
