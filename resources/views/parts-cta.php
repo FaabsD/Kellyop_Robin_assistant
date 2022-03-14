@@ -15,7 +15,7 @@
     <?php endif; ?>
 
     <?php if ( get_field('call_to_action_image') ) : ?>
-        <div class="cta__image">
+        <div class="cta__image <?php echo (get_field('rounded_image') && get_field('rounded_image')[0] === 'Yes') ? 'cta__image--rounded' : '';  ?>">
             <?php echo wp_get_attachment_image(get_field('call_to_action_image'), 'full'); ?>
         </div>
     <?php elseif ( get_field('call_to_action_instruction_video') ) : ?>
