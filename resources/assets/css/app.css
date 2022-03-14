@@ -119,8 +119,9 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   align-items: center;
-  padding: 1rem 5rem;
+  padding: 0 5rem;
   position: relative;
+  background-color: #E6EBF9;
 }
 .cta__content {
   flex-basis: fit-content;
@@ -139,6 +140,9 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
 }
 .cta__content h2 {
   font-size: 3.125rem;
+  font-family: Gilroy, sans-serif;
+  color: #0B37F2;
+  margin: 1rem 0;
 }
 .cta__content .cta__link-container {
   width: -webkit-max-content;
@@ -157,7 +161,8 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
   display: block;
   box-sizing: border-box;
   background-color: #0B37F2;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.4rem;
   color: #FEA233;
   text-decoration: none;
 }

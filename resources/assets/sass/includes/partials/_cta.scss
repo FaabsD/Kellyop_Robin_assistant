@@ -8,8 +8,9 @@
 	justify-content: space-between;
 	column-gap: 2rem;
 	align-items: center;
-	padding: 1rem 5rem;
+	padding: 0 5rem;
 	position: relative;
+	background-color: colors.$lightGrey;
 
 	&__content {
 		flex-basis: fit-content;
@@ -22,6 +23,9 @@
 
 		h2 {
 			font-size: fontSizes.$px50;
+			font-family: fonts.$gilroy;
+			color: colors.$blue;
+			margin: 1rem 0;
 		}
 
 
@@ -38,7 +42,8 @@
 				display: block;
 				box-sizing: border-box;
 				background-color: colors.$blue;
-				padding: 1rem 2rem;
+				padding: .5rem 1.5rem;
+				border-radius: .4rem;
 				color: colors.$orange;
 				text-decoration: none;
 			}
