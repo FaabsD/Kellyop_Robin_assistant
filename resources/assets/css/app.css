@@ -63,7 +63,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  background-color: #F7F9FF;
+  background-color: #0B37F2;
 }
 header .custom-logo-link .custom-logo {
   max-height: 4rem;
@@ -101,6 +101,7 @@ header .header__menu-section .menu-main-menu-container .menu-item a {
   padding: 0;
   text-decoration: none;
   font-family: inherit;
+  color: #E6EBF9;
 }
 header .header__menu-section .menu-main-menu-container .menu-item-type-custom:not(.menu-item-home) a {
   display: inline-block;
@@ -119,6 +120,7 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
        column-gap: 2rem;
   align-items: center;
   padding: 1rem 5rem;
+  position: relative;
 }
 .cta__content {
   flex-basis: fit-content;
@@ -133,6 +135,10 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
+  color: #262838;
+}
+.cta__content h2 {
+  font-size: 3.125rem;
 }
 .cta__content .cta__link-container {
   width: -webkit-max-content;
@@ -150,9 +156,9 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
   font-weight: bold;
   display: block;
   box-sizing: border-box;
-  background-color: black;
+  background-color: #0B37F2;
   padding: 1rem 2rem;
-  color: #F7F9FF;
+  color: #FEA233;
   text-decoration: none;
 }
 .cta__image {
@@ -163,7 +169,6 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 11rem;
 }
 .cta__image .attachment-full {
   max-width: 100%;
@@ -173,6 +178,9 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.cta__image__rounded {
+  border-radius: 11rem;
 }
 .cta__instruction-video {
   flex-basis: fit-content;
@@ -184,4 +192,51 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
   grid-template-columns: repeat(3, minmax(min-content, 1fr));
+}
+
+.page-template-default .site-content .content__wrapper {
+  padding: 0 5rem;
+}
+.page-template-default .site-content .content__wrapper h1 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-default .site-content .content__wrapper h2 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-default .site-content .content__wrapper h3 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-default .site-content .content__wrapper h4 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-default .site-content .content__wrapper h5 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-default .site-content .content__wrapper h2 {
+  font-size: 3.125rem;
+  margin: 1.5625rem 0;
+}
+.page-template-default .site-content .content__wrapper .wp-block-columns:not(.is-not-stacked-on-mobile) > .wp-block-column:not(:first-child) {
+  margin-left: unset;
+}
+.page-template-default .site-content .content__wrapper .wp-block-columns:nth-child(1) .wp-block-column:first-of-type {
+  margin-left: 10rem;
+}
+.page-template-default .site-content .content__wrapper .wp-block-columns .wp-block-column p {
+  font-size: 1rem;
 }

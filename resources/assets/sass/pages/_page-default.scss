@@ -1,0 +1,50 @@
+@use "../includes/vars/colors";
+@use "../includes/vars/fonts";
+@use "../includes/vars/fontSizes";
+
+.page-template-default {
+	.site-content {
+		.content__wrapper {
+			padding: 0 5rem;
+
+			// one style base for every heading tag on the page using default template
+			@for $i from 1 through 5 {
+				h#{$i} {
+					color: colors.$blue;
+					font-family: fonts.$gilroy;
+					font-weight: 800;
+					margin: 0;
+				}
+			}
+
+			h2 {
+				font-size: fontSizes.$px50;
+				margin: fontSizes.$px50 / 2 0;
+			}
+
+			.wp-block-columns {
+				&:not(.is-not-stacked-on-mobile) {
+					> .wp-block-column {
+						&:not(:first-child) {
+							margin-left: unset;
+						}
+					}
+				}
+
+				&:nth-child(1) {
+					.wp-block-column {
+						&:first-of-type {
+							margin-left: 10rem;
+						}
+					}
+				}
+
+				.wp-block-column {
+					p {
+						font-size: fontSizes.$px16;
+					}
+				}
+			}
+		}
+	}
+}
