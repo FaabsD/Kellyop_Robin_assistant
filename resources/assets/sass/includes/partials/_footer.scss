@@ -1,5 +1,103 @@
+@use "../vars/colors";
+@use "../vars/fonts";
+@use "../vars/fontSizes";
+
 footer {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(min-content, 1fr));
+	grid-template-columns: repeat(4, minmax(min-content, 1fr));
+	background-color: colors.$main;
+
+	.footer-cta {
+		grid-column: 1/-1;
+		background-color: colors.$blue;
+		font-family: fonts.$gilroy;
+		padding: 1rem 5rem 2.5rem 5rem;
+
+		p {
+			font-family: inherit;
+			font-size: fontSizes.$px20;
+			color: colors.$background;
+		}
+
+		.wp-block-buttons {
+			.wp-block-button {
+				&__link {
+					font-family: inherit;
+					font-weight: 800;
+					font-size: fontSizes.$px16;
+					background-color: colors.$orange;
+					color: colors.$blue;
+					border-radius: .5rem;
+					padding: .7rem 1.5rem;
+				}
+			}
+		}
+	}
+
+	.footer-content {
+		color: colors.$background;
+		padding: 2rem 0;
+
+		&-4 {
+			.wp-block-group {
+				&__inner-container {
+					p {
+						&:first-of-type {
+							//background-color: lime;
+							margin-top: 4rem
+						}
+					}
+				}
+			}
+		}
+
+		&-1 {
+			.wp-block-group {
+				&__inner-container {
+					.wp-block-image {
+						text-align: left;
+						padding-left: 3.7rem;
+
+						img {
+							max-width: 161px;
+						}
+					}
+				}
+			}
+		}
+
+		.wp-block-group {
+			&__inner-container {
+				font-family: fonts.$gilroy;
+
+				h3 {
+					font-family: inherit;
+					color: colors.$orange;
+					font-size: fontSizes.$px20;
+				}
+
+				p {
+					font-family: inherit;
+					font-size: fontSizes.$px16;
+				}
+			}
+		}
+
+	}
+
+	.footer-copyright {
+		grid-column: 1/-1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: fonts.$gilroy;
+
+		p {
+			color: colors.$background;
+			font-family: inherit;
+			font-weight: 800;
+			font-size: fontSizes.$px16;
+		}
+	}
 
 }

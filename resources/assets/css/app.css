@@ -195,8 +195,68 @@ header .header__menu-section .menu-main-menu-container .menu-item-type-custom:no
 
 footer {
   display: grid;
-  grid-template-columns: repeat(3, minmax(-webkit-min-content, 1fr));
-  grid-template-columns: repeat(3, minmax(min-content, 1fr));
+  grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
+  grid-template-columns: repeat(4, minmax(min-content, 1fr));
+  background-color: #262838;
+}
+footer .footer-cta {
+  grid-column: 1/-1;
+  background-color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  padding: 1rem 5rem 2.5rem 5rem;
+}
+footer .footer-cta p {
+  font-family: inherit;
+  font-size: 1.25rem;
+  color: #F7F9FF;
+}
+footer .footer-cta .wp-block-buttons .wp-block-button__link {
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1rem;
+  background-color: #FEA233;
+  color: #0B37F2;
+  border-radius: 0.5rem;
+  padding: 0.7rem 1.5rem;
+}
+footer .footer-content {
+  color: #F7F9FF;
+  padding: 2rem 0;
+}
+footer .footer-content-4 .wp-block-group__inner-container p:first-of-type {
+  margin-top: 4rem;
+}
+footer .footer-content-1 .wp-block-group__inner-container .wp-block-image {
+  text-align: left;
+  padding-left: 3.7rem;
+}
+footer .footer-content-1 .wp-block-group__inner-container .wp-block-image img {
+  max-width: 161px;
+}
+footer .footer-content .wp-block-group__inner-container {
+  font-family: Gilroy, sans-serif;
+}
+footer .footer-content .wp-block-group__inner-container h3 {
+  font-family: inherit;
+  color: #FEA233;
+  font-size: 1.25rem;
+}
+footer .footer-content .wp-block-group__inner-container p {
+  font-family: inherit;
+  font-size: 1rem;
+}
+footer .footer-copyright {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gilroy, sans-serif;
+}
+footer .footer-copyright p {
+  color: #F7F9FF;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 1rem;
 }
 
 .page-template-default .site-content .content__wrapper {
