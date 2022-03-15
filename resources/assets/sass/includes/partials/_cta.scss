@@ -62,8 +62,7 @@
 					font-weight: 800;
 
 					&:after {
-						//TODO: add arrow once i've got the file
-						content: '';
+						content: "";
 						background-image: url("../../resources/icons/pijl.svg");
 						display: inline-block;
 						height: 20px;
