@@ -4,6 +4,22 @@
 
 .page-template-default {
 	.site-content {
+
+		& > .cta {
+			height: 100%;
+
+			.cta__image {
+				.attachment-full {
+					@media screen and (min-width: 1920px) {
+						height: 91.5vh;
+					}
+					height: 90vh;
+					//width: auto;
+					object-fit: cover;
+				}
+			}
+		}
+
 		.content__wrapper {
 			padding: 0 5rem;
 

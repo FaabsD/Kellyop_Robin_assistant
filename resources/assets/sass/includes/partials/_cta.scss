@@ -19,8 +19,8 @@
 	}
 
 	&__content {
-		flex-basis: fit-content;
-		flex-grow: 0;
+		flex-basis: 0;
+		flex-grow: 1;
 		flex-shrink: 1;
 		height: max-content;
 		min-height: min-content;
@@ -41,6 +41,7 @@
 			flex-shrink: 0;
 
 			.cta__link {
+				margin: 0;
 				min-height: min-content;
 				max-height: 3rem;
 				font-size: fontSizes.$px16;
