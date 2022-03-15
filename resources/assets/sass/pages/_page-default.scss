@@ -34,7 +34,8 @@
 				&:nth-child(1) {
 					.wp-block-column {
 						&:first-of-type {
-							margin-left: 10rem;
+							margin-left: 10vw;
+							min-width: 50%;
 						}
 					}
 				}
