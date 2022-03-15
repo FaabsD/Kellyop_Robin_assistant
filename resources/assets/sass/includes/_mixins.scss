@@ -1,0 +1,19 @@
+@use "vars/colors";
+@use "vars/fonts";
+@use "vars/fontSizes";
+
+@mixin headingBase {
+	@for $i from 1 through 5 {
+		h#{$i} {
+			color: colors.$blue;
+			font-family: fonts.$gilroy;
+			font-weight: 800;
+			margin: 0;
+		}
+	}
+
+	h2 {
+		font-size: fontSizes.$px50;
+		margin: fontSizes.$px50 / 2 0;
+	}
+}
