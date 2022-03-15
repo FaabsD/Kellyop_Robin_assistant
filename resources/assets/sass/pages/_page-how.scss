@@ -1,0 +1,64 @@
+@use "../includes/vars/colors";
+@use "../includes/vars/fonts";
+@use "../includes/vars/fontSizes";
+
+@use "../includes/mixins";
+
+.page-template-page-how {
+	.site-content {
+		.content__wrapper {
+
+			@include mixins.headingBase;
+
+			.wp-block-columns {
+				padding: 0 5rem;
+
+				// style the second section of the how it works page content
+				&:nth-child(2) {
+					margin-bottom: 0;
+
+					.wp-block-column {
+						flex-basis: min-content;
+
+						&:first-child {
+							.wp-block-image {
+								margin: 0;
+
+								img {
+									max-height: 567px;
+									width: auto;
+									object-fit: cover;
+									object-position: center;
+								}
+							}
+						}
+						&:nth-child(2) {
+							h2 {
+								margin-top: 0;
+							}
+						}
+					}
+				}
+
+				&:nth-child(3) {
+					// Styling for the third section in the how it works page
+					background-color: colors.$lightGrey;
+					padding: 5rem;
+					margin-bottom: 0;
+
+					.wp-block-column {
+						&:first-child {
+							display: flex;
+							justify-content: left;
+							align-items: center;
+
+							.wp-block-group {
+								width: 70%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

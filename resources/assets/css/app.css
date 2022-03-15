@@ -312,3 +312,74 @@ footer .footer-copyright p {
 .page-template-default .site-content .content__wrapper .wp-block-columns .wp-block-column p {
   font-size: 1rem;
 }
+
+.page-template-page-how .site-content .content__wrapper h1 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-page-how .site-content .content__wrapper h2 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-page-how .site-content .content__wrapper h3 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-page-how .site-content .content__wrapper h4 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-page-how .site-content .content__wrapper h5 {
+  color: #0B37F2;
+  font-family: Gilroy, sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+.page-template-page-how .site-content .content__wrapper h2 {
+  font-size: 3.125rem;
+  margin: 1.5625rem 0;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns {
+  padding: 0 5rem;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(2) {
+  margin-bottom: 0;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(2) .wp-block-column {
+  flex-basis: min-content;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(2) .wp-block-column:first-child .wp-block-image {
+  margin: 0;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(2) .wp-block-column:first-child .wp-block-image img {
+  max-height: 567px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(2) .wp-block-column:nth-child(2) h2 {
+  margin-top: 0;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(3) {
+  background-color: #E6EBF9;
+  padding: 5rem;
+  margin-bottom: 0;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(3) .wp-block-column:first-child {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.page-template-page-how .site-content .content__wrapper .wp-block-columns:nth-child(3) .wp-block-column:first-child .wp-block-group {
+  width: 70%;
+}
