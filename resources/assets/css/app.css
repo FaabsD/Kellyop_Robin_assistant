@@ -343,7 +343,7 @@ footer .footer-copyright p {
   margin-left: unset;
 }
 .page-template-default .site-content .content__wrapper .wp-block-columns:nth-child(1) .wp-block-column:first-of-type {
-  margin-left: 10vw;
+  margin-left: 5vw;
   min-width: 50%;
 }
 .page-template-default .site-content .content__wrapper .wp-block-columns .wp-block-column p {
