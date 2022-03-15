@@ -63,8 +63,16 @@
 
 					&:after {
 						//TODO: add arrow once i've got the file
-						content: '\2192';
-						color: colors.$orange;
+						content: '';
+						background-image: url("../../resources/icons/pijl.svg");
+						display: inline-block;
+						height: 20px;
+						min-width: 44.64px;
+						object-fit: cover;
+						background-size: cover;
+						background-repeat: no-repeat;
+						background-position: center;
+
 					}
 				}
 			}
