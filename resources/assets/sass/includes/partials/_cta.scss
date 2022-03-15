@@ -2,6 +2,8 @@
 @use "../vars/fonts";
 @use "../vars/fontSizes";
 
+
+
 .cta {
 	display: flex;
 	flex-direction: row;
@@ -11,6 +13,10 @@
 	padding: 0 5rem;
 	position: relative;
 	background-color: colors.$lightGrey;
+
+	&--has_video {
+		padding: 10rem 5rem 5rem 5rem;
+	}
 
 	&__content {
 		flex-basis: fit-content;
@@ -46,6 +52,21 @@
 				border-radius: .4rem;
 				color: colors.$orange;
 				text-decoration: none;
+
+				&--has_arrow {
+					color: colors.$blue;
+					background-color: unset;
+					padding: unset;
+					font-size: fontSizes.$px20;
+					font-family: fonts.$gilroy;
+					font-weight: 800;
+
+					&:after {
+						//TODO: add arrow once i've got the file
+						content: '\2192';
+						color: colors.$orange;
+					}
+				}
 			}
 		}
 	}

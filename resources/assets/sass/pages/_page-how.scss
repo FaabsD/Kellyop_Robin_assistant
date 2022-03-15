@@ -13,6 +13,23 @@
 			.wp-block-columns {
 				padding: 0 5rem;
 
+				// styling the first section of how it works page content
+				&:first-child {
+					padding: 5rem;
+					.wp-block-column {
+						&:first-child {
+							.wp-block-image {
+								margin: 0;
+							}
+						}
+
+						&:nth-child(2) {
+							display: flex;
+							align-items: center;
+						}
+					}
+				}
+
 				// style the second section of the how it works page content
 				&:nth-child(2) {
 					margin-bottom: 0;
@@ -32,6 +49,7 @@
 								}
 							}
 						}
+
 						&:nth-child(2) {
 							h2 {
 								margin-top: 0;
