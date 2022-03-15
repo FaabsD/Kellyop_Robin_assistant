@@ -1,12 +1,12 @@
 <?php
 /* Template Name: FAQ */
-$args = array('post_type' => 'FAQ');
+$args = array('post_type' => 'FAQ', 'order' =>'ASC');
 $query = new WP_Query($args);
 ?>
 <?php get_header(); ?>
 <div class="site-content">
     <div class="title-heading">
-        <?php the_title(); ?>
+        <h2><?php the_title(); ?></h2>
     </div>
     <div class="faq-container">
         <div class="faq-container__items">

@@ -411,19 +411,36 @@ footer .footer-copyright p {
 }
 
 .page-template-page-faq .site-content {
+  padding: 2rem 0;
   background-color: #E6EBF9;
+}
+.page-template-page-faq .site-content .title-heading {
+  text-align: center;
+}
+.page-template-page-faq .site-content .title-heading h2 {
+  font-family: Gilroy, sans-serif;
+  font-size: 3.125rem;
+  font-weight: 800;
+  color: #0B37F2;
+  margin: 1.5625rem 0;
 }
 .page-template-page-faq .site-content .faq-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  padding-left: 25vw;
 }
 .page-template-page-faq .site-content .faq-container__items {
-  flex-basis: 75%;
+  flex-basis: 65%;
   flex-grow: 0;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
   row-gap: 1rem;
 }
 .page-template-page-faq .site-content .faq-container__items .item {
@@ -485,37 +502,34 @@ footer .footer-copyright p {
   font-weight: normal;
   color: #262838;
 }
-.page-template-page-faq .site-content .content__wrapper h1 {
-  color: #0B37F2;
-  font-family: Gilroy, sans-serif;
-  font-weight: 800;
-  margin: 0;
+.page-template-page-faq .site-content .faq-container__image {
+  align-self: end;
+  flex-grow: 0;
+  flex-shrink: 1;
+  max-height: 75%;
+}
+.page-template-page-faq .site-content .faq-container__image img {
+  max-height: 32rem;
+}
+.page-template-page-faq .site-content .content__wrapper {
+  text-align: center;
+  width: 38%;
+  margin: 2.5rem auto 1.5rem auto;
+}
+@media screen and (min-width: 1920px) {
+  .page-template-page-faq .site-content .content__wrapper {
+    width: 28%;
+  }
 }
 .page-template-page-faq .site-content .content__wrapper h2 {
-  color: #0B37F2;
+  color: #262838;
+  font-size: 1.25rem;
   font-family: Gilroy, sans-serif;
   font-weight: 800;
-  margin: 0;
+  margin: 0.625rem 0;
+  line-height: normal;
 }
-.page-template-page-faq .site-content .content__wrapper h3 {
-  color: #0B37F2;
-  font-family: Gilroy, sans-serif;
-  font-weight: 800;
-  margin: 0;
-}
-.page-template-page-faq .site-content .content__wrapper h4 {
-  color: #0B37F2;
-  font-family: Gilroy, sans-serif;
-  font-weight: 800;
-  margin: 0;
-}
-.page-template-page-faq .site-content .content__wrapper h5 {
-  color: #0B37F2;
-  font-family: Gilroy, sans-serif;
-  font-weight: 800;
-  margin: 0;
-}
-.page-template-page-faq .site-content .content__wrapper h2 {
-  font-size: 3.125rem;
-  margin: 1.5625rem 0;
+.page-template-page-faq .site-content .content__wrapper p {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }

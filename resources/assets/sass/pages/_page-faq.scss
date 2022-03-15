@@ -6,19 +6,35 @@
 
 .page-template-page-faq {
 	.site-content {
+		padding: 2rem 0;
 		background-color: colors.$lightGrey;
+
+		.title-heading {
+			text-align: center;
+
+			h2 {
+				font-family: fonts.$gilroy;
+				font-size: fontSizes.$px50;
+				font-weight: 800;
+				color: colors.$blue;
+				margin: fontSizes.$px50 / 2 0;
+			}
+		}
 
 		.faq-container {
 			display: flex;
 			flex-direction: row;
-			justify-content: center;
+			justify-content: flex-start;
+			column-gap: 5rem;
+			padding-left: 25vw;
 
 			&__items {
-				flex-basis: 75%;
+				flex-basis: 65%;
 				flex-grow: 0;
 				flex-shrink: 0;
 				display: flex;
 				flex-direction: column;
+				max-height: max-content;
 				row-gap: 1rem;
 
 				.item {
@@ -63,14 +79,17 @@
 					&__answer {
 						transform: scaleY(0%);
 						max-height: 0;
+
 						&--open {
 							max-width: 75%;
 							transform: scaleY(100%);
 							max-height: min-content;
+
 							p {
 								margin-bottom: 0;
 							}
 						}
+
 						p {
 							font-family: fonts.$nexa;
 							font-size: fontSizes.$px16;
@@ -82,10 +101,41 @@
 				}
 			}
 
+			&__image {
+				align-self: end;
+				//flex-basis: 75%;
+				flex-grow: 0;
+				flex-shrink: 1;
+				max-height: 75%;
+
+				img {
+					max-height: 32rem;
+				}
+			}
+
 		}
 
 		.content__wrapper {
-			@include mixins.headingBase;
+			text-align: center;
+			@media screen and (min-width: 1920px) {
+				width: 28%;
+			}
+			width: 38%;
+			margin: 2.5rem auto 1.5rem auto;
+
+			h2 {
+				color: colors.$main;
+				font-size: fontSizes.$px20;
+				font-family: fonts.$gilroy;
+				font-weight: 800;
+				margin: fontSizes.$px20 / 2 0;
+				line-height: normal;
+			}
+
+			p {
+				font-size: fontSizes.$px16;
+				line-height: fontSizes.$px16 * 1.5;
+			}
 		}
 	}
 }
