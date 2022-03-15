@@ -1,0 +1,70 @@
+@use "../includes/vars/colors";
+@use "../includes/vars/fonts";
+@use "../includes/vars/fontSizes";
+
+@use "../includes/mixins";
+
+.page-template-page-faq {
+	.site-content {
+		background-color: colors.$lightGrey;
+
+		.faq-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+
+			&__items {
+				flex-basis: 75%;
+				flex-grow: 0;
+				flex-shrink: 0;
+
+				.item {
+					position: relative;
+					background-color: colors.$background;
+					padding: .5rem;
+
+					&__icon {
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%);
+
+						.icon {
+							img {
+								width: auto;
+								height: 15.5px;
+								object-fit: cover;
+							}
+
+							&--hidden {
+								display: none;
+							}
+						}
+					}
+
+					&__title {
+						font-size: fontSizes.$px20;
+						color: colors.$blue;
+						font-family: fonts.$gilroy;
+						font-weight: 800;
+					}
+
+					&__answer {
+						transform: scaleY(0%);
+						max-height: 0;
+						//transition: transform .5s ease-in-out, max-height .5s linear;
+						&--open {
+							transform: scaleY(100%);
+							max-height: min-content;
+						}
+					}
+				}
+			}
+
+		}
+
+		.content__wrapper {
+			@include mixins.headingBase;
+		}
+	}
+}
