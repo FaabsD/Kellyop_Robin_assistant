@@ -17,17 +17,25 @@
 				flex-basis: 75%;
 				flex-grow: 0;
 				flex-shrink: 0;
+				display: flex;
+				flex-direction: column;
+				row-gap: 1rem;
 
 				.item {
 					position: relative;
 					background-color: colors.$background;
-					padding: .5rem;
+					padding: 1.5rem 1rem;
+					max-height: max-content;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					box-sizing: content-box;
+					border-radius: .3rem;
 
 					&__icon {
 						position: absolute;
-						right: 0;
-						top: 50%;
-						transform: translateY(-50%);
+						right: 1rem;
+						transform: translateY(15%);
 
 						.icon {
 							img {
@@ -47,15 +55,28 @@
 						color: colors.$blue;
 						font-family: fonts.$gilroy;
 						font-weight: 800;
+						margin: 0;
+						min-width: min-content;
+						flex-basis: 100%;
 					}
 
 					&__answer {
 						transform: scaleY(0%);
 						max-height: 0;
-						//transition: transform .5s ease-in-out, max-height .5s linear;
 						&--open {
+							max-width: 75%;
 							transform: scaleY(100%);
 							max-height: min-content;
+							p {
+								margin-bottom: 0;
+							}
+						}
+						p {
+							font-family: fonts.$nexa;
+							font-size: fontSizes.$px16;
+							line-height: fontSizes.$px16 * 1.5;
+							font-weight: normal;
+							color: colors.$main;
 						}
 					}
 				}
