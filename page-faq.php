@@ -5,6 +5,9 @@ $query = new WP_Query($args);
 ?>
 <?php get_header(); ?>
 <div class="site-content">
+    <div class="title-heading">
+        <?php the_title(); ?>
+    </div>
     <div class="faq-container">
         <div class="faq-container__items">
             <?php if ( $query->have_posts() ) :
@@ -31,6 +34,9 @@ $query = new WP_Query($args);
             <p>No FAQ's found</p>
 
         <?php endif; ?>
+        <div class="faq-container__image">
+            <img src="<?php echo THEME_URL . "/resources/img/faq_vrouw.png" ?>" alt="">
+        </div>
     </div>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <div class="content__wrapper">
